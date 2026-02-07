@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Habibaa ❤️</title>
+  <link rel="stylesheet" href="./style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+  <!-- FIRST ENTRY SCREEN -->
+<div id="entryScreen" class="entry">
+  <h2>Private Website 🔒</h2>
+  <p>Only Basmaa is allowed here 😌</p>
+
+  <input type="password" id="entryInput" placeholder="Enter your name">
+  <button onclick="enterSite()">Enter</button>
+
+  <p id="entryMsg"></p>
+</div>
+
+
+<div id="mainSite" class="container hidden">
+  <h1>Basmaa ❤️ Hammad</h1>
+  <p class="subtitle">This website is made to steal your smile 😌</p>
+
+  <button onclick="startMagic()">Click anyway</button>
+
+  <!-- Batman Section -->
+  <div id="batmanBox" class="hidden">
+    <img src="./assets/batman.gif" alt="Batman with flowers">
+    <p>Batman says: I love you sweetie 🖤🌹</p>
+  </div>
+<audio id="loveVoice">
+  <source src="./assets/voice.mp3" type="audio/mpeg">
+</audio>
+
+  <!-- Funny Tasks -->
+  <div id="tasks" class="hidden">
+    <h3>For you I would 😭</h3>
+    <ul>
+      <li>Wash dishes 🍽️</li>
+      <li>Clean the house 🧹</li>
+      <li>Listen to you even when I’m wrong 😌</li>
+      <li>Fight the whole world for you 🦸</li>
+      <li>Okay fine… I’d even be lesbian for you 🤡</li>
+    </ul>
+  </div>
+
+  <!-- Kiss Question -->
+  <div id="kissSection" class="hidden">
+    <h3>Do you wanna give Hammad a French kiss? 😏</h3>
+    <label><input type="radio" name="kiss" onclick="kissYes()"> Yes 💋</label>
+    <label><input type="radio" name="kiss" onclick="kissNo()"> No 🙄</label>
+  </div>
+
+<!-- Confetti -->
+<div id="confetti"></div>
+
+  <!-- Cat Kiss -->
+  <div id="catKiss" class="hidden">
+    <img src="./assets/catkiss.gif" alt="Cat kiss">
+    <p>Us right now 😳💋</p>
+  </div>
+
+  <!-- Distance -->
+  <div id="flight" class="hidden">
+    ✈️ Mumbai ➜ Larache  
+    <p>Distance tried… but love won 🤍</p>
+  </div>
+
+  <!-- Final Text -->
+  <div id="finalText" class="hidden"></div>
+</div>
+<!-- US SINCE COUNTER -->
+<div id="sinceBox" class="hidden">
+  <p id="sinceText"></p>
+</div>
+
+
+<script src="./script.js"></script>
+</body>
+</html>
