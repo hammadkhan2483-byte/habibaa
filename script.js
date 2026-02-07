@@ -147,5 +147,11 @@ function finalSurprise() {
     );
   }, 10000); // 10 seconds
 }
+function playVoice() {
+  const audio = document.getElementById("loveVoice");
+  audio.currentTime = 0;
+  audio.play();
+}
+
 
 
