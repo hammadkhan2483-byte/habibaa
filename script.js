@@ -1,14 +1,9 @@
 function startMagic() {
   const audio = document.getElementById("loveVoice");
-
-  // MOBILE-SAFE AUDIO PLAY
+  audio.muted = false;
   audio.currentTime = 0;
-  audio.volume = 1;
-
-  audio.play().then(() => {
-    console.log("Audio playing");
-  }).catch((err) => {
-    console.log("Audio blocked:", err);
+  audio.play().catch(() => {
+    alert("Tap the play icon to hear my voice ❤️");
   });
 
   document.getElementById("batmanBox").style.display = "block";
@@ -20,11 +15,8 @@ function startMagic() {
   setTimeout(() => {
     document.getElementById("kissSection").style.display = "block";
   }, 3000);
-
-  setTimeout(() => {
-    document.getElementById("flight").style.display = "block";
-  }, 5000);
 }
+
 
 
 function kissYes() {
@@ -152,6 +144,7 @@ function playVoice() {
   audio.currentTime = 0;
   audio.play();
 }
+
 
 
 
