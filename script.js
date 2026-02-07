@@ -1,5 +1,15 @@
 function startMagic() {
-  document.getElementById("loveVoice").play();
+  const audio = document.getElementById("loveVoice");
+
+  // MOBILE-SAFE AUDIO PLAY
+  audio.currentTime = 0;
+  audio.volume = 1;
+
+  audio.play().then(() => {
+    console.log("Audio playing");
+  }).catch((err) => {
+    console.log("Audio blocked:", err);
+  });
 
   document.getElementById("batmanBox").style.display = "block";
 
@@ -15,6 +25,7 @@ function startMagic() {
     document.getElementById("flight").style.display = "block";
   }, 5000);
 }
+
 
 function kissYes() {
   document.querySelector(".container").classList.add("heartbeat");
@@ -136,4 +147,5 @@ function finalSurprise() {
     );
   }, 10000); // 10 seconds
 }
+
 
